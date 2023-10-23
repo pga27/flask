@@ -29,11 +29,6 @@ importlib-metadata==6.0.0
 itsdangerous==2.1.2
 Jinja2==3.1.2
 jsonschema==4.17.3
-Kivy==2.1.0
-kivy-deps.angle==0.3.3
-kivy-deps.glew==0.3.1
-kivy-deps.sdl2==0.4.5
-Kivy-Garden==0.1.5
 lxml==4.9.2
 Mako==1.2.4
 markdown-it-py==2.2.0
