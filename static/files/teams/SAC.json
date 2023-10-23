@@ -1,0 +1,84 @@
+{
+    "Players": [
+        {
+            "Player": "Colby Jones",
+            "Link": "https://www.basketball-reference.com/players/j/jonesco02.html"
+        },
+        {
+            "Player": "Dane Goodwin",
+            "Link": "https://www.basketball-reference.com/players/g/goodwda02.html"
+        },
+        {
+            "Player": "Jake Stephens",
+            "Link": "https://www.basketball-reference.com/players/s/stephja02.html"
+        },
+        {
+            "Player": "Jaylen Nowell",
+            "Link": "https://www.basketball-reference.com/players/n/nowelja01.html"
+        },
+        {
+            "Player": "Jordan Ford",
+            "Link": "https://www.basketball-reference.com/players/f/fordjo01.html"
+        },
+        {
+            "Player": "JaVale McGee",
+            "Link": "https://www.basketball-reference.com/players/m/mcgeeja01.html"
+        },
+        {
+            "Player": "Sasha Vezenkov",
+            "Link": "https://www.basketball-reference.com/players/v/vezenal01.html"
+        },
+        {
+            "Player": "Alex Len",
+            "Link": "https://www.basketball-reference.com/players/l/lenal01.html"
+        },
+        {
+            "Player": "Trey Lyles",
+            "Link": "https://www.basketball-reference.com/players/l/lylestr01.html"
+        },
+        {
+            "Player": "Keon Ellis",
+            "Link": "https://www.basketball-reference.com/players/e/elliske01.html"
+        },
+        {
+            "Player": "Domantas Sabonis",
+            "Link": "https://www.basketball-reference.com/players/s/sabondo01.html"
+        },
+        {
+            "Player": "Jalen Slawson",
+            "Link": "https://www.basketball-reference.com/players/s/slawsja01.html"
+        },
+        {
+            "Player": "Harrison Barnes",
+            "Link": "https://www.basketball-reference.com/players/b/barneha02.html"
+        },
+        {
+            "Player": "Kessler Edwards",
+            "Link": "https://www.basketball-reference.com/players/e/edwarke02.html"
+        },
+        {
+            "Player": "Malik Monk",
+            "Link": "https://www.basketball-reference.com/players/m/monkma01.html"
+        },
+        {
+            "Player": "Keegan Murray",
+            "Link": "https://www.basketball-reference.com/players/m/murrake02.html"
+        },
+        {
+            "Player": "Kevin Huerter",
+            "Link": "https://www.basketball-reference.com/players/h/huertke01.html"
+        },
+        {
+            "Player": "Chris Duarte",
+            "Link": "https://www.basketball-reference.com/players/d/duartch01.html"
+        },
+        {
+            "Player": "Davion Mitchell",
+            "Link": "https://www.basketball-reference.com/players/m/mitchda01.html"
+        },
+        {
+            "Player": "De'Aaron Fox",
+            "Link": "https://www.basketball-reference.com/players/f/foxde01.html"
+        }
+    ]
+}

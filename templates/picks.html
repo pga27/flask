@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <title>NBA Daily Picks</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+     
+    <body class="body">
+        <div class="main" script="width=100%">
+            <!-- !PAGE CONTENT! -->
+            <!-- Cabeçalho--> 
+            <header id="inicio">
+                <div class="row">
+                    <div class="col justify-content-start">
+                        <div class="form-check form-switch d-flex justify-content-start top-nav">
+                            <input type="checkbox" class="form-check-input" id="checkbox" onclick="toggleDarkMode()">
+                            <label class="form-check-label" for="checkbox"><p class="theme" style="padding-left: 5px;"><i class="fa-solid fa-circle-half-stroke fa-rotate-180"></i></p></label>
+                        </div>
+                    </div>
+                    <div class="top-nav col d-flex justify-content-end">
+        {% block content %}
+                            {% if userLogged %}
+                                <button onclick="location.href='/logout'" class="btn logged" id="logout"><i class="fa fa-sign-in"></i>Logout</a>
+                                <button onclick="location.href='/profile'" class="btn logged"><i class="fa fa-user"></i>Profile</a>
+                            {% else %}
+                                <button onclick="location.href='/login'" class="btn unlogged"><i class="fa fa-sign-out"></i>Login</a>
+                                <button onclick="location.href='/sign-up'" class="btn unlogged"><i class="fa fa-user-plus"></i>Sign Up</a>
+                            {% endif %}
+                        
+                        
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="nav justify-content-center" id="borderless">
+                        <button onclick="location.href='/';"class="btn"><i class="fa fa-info"></i>How to Play</button>
+                        <button class="btn" id="selectedbtn"><i class="fa fa-gamepad"></i>Pick 'em</button>
+                        <button onclick="location.href='/rankings';"class="btn"><i class="fa fa-ranking-star"></i>Rankings</button>
+                        <button onclick="location.href='/results';"class="btn"><i class="fa fa-bars"></i>Results</button>
+                        <button onclick="location.href='/schedule';"class="btn"><i class="fa fa-calendar"></i>Schedule</button>
+                        <button onclick="location.href='/standings';"class="btn"><i class="fa fa-square-poll-vertical"></i>Standings</button>
+                    </div>
+                </div>
+            </header>
+            {% for message in get_flashed_messages() %}
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{ message }}  
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>  
+            {% endfor %}
+            <!--Conteúdo-->
+            <div class="center titulo"><b>Pick' em</b></div>
+            {% if games["Games"] == [] %}
+            <div class="d-flex justify-content-center"><h2>No games today.</h2></div>
+            {% else %}
+            {% for game in games["Games"] %}
+            <div class="center texto">
+                <div class="container-fluid game">
+                    <div class="row toprow">
+                        <div class="col" style="width: 20%;">
+                            <p>Winner: </p>
+                            <div class="button-group">
+                                <button class="game{{ loop.index - 1 }}" id="{{ game['team1'] }}" onclick='selectButton(`{{ game["team1"]}}`,`{{loop.index - 1}}`)'>{{ game["team1"] }}</button>
+                                <button class="game{{ loop.index - 1 }}" id="{{ game['team2'] }}" onclick='selectButton(`{{ game["team2"]}}`,`{{loop.index - 1}}`)'>{{ game["team2"] }}</button>
+                            </div>
+                        </div>
+                        <div class="col team1" style="width: 20%;">
+                            <figure>
+                                <img src="{{ url_for('static', filename='images/teams/{}.png'.format(game['team1']))}}" class="img">
+                                <figcaption><a class="underline" href="../stats/{{game['team1']}}" target="_blank">{{ game["team1"] }}</a></figcaption>
+                            </figure>
+                        </div>
+                        <div class="col" style="width: 20%;">
+                            <p>VS.</p>
+                        </div>
+                        <div class="col team2" style="width: 20%;">
+                            <figure>
+                                <img src="{{ url_for('static', filename='images/teams/{}.png'.format(game['team2']))}}" class="img">
+                                <figcaption><a class="underline" href="../stats/{{game['team2']}}" target="_blank">{{ game["team2"] }}</a></figcaption>
+                            </figure>
+                        </div>
+                        <div class="col" style="width: 20%;">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="row botrow">
+                        <div class="container-fluid col">
+                            <form>
+                                <label for="scorer{{ loop.index - 1 }}" style="margin-right: 5px;">Points :</label>
+                                <select class="dropoptions" id="scorer{{ loop.index - 1 }}" name="player">
+                                    <option disabled selected hidden>Select Best Scorer</option>
+                                    {% for player in playersList["game{}".format(loop.index - 1)] %}
+                                        <option value="{{ player['Player'] }}">{{ player }}</option>
+                                    {% endfor %}
+                                </select>
+                            </form>
+                        </div>
+                        <div class="container-fluid col">
+                            <form>
+                                <label for="passer{{ loop.index - 1 }}" style="margin-right: 5px;">Assists :</label>
+                                <select class="dropoptions" id="passer{{ loop.index - 1 }}" name="player">
+                                    <option disabled selected hidden>Select Best Passer</option>
+                                    {% for player in playersList["game{}".format(loop.index - 1)] %}
+                                        <option value="{{ player['Player'] }}">{{ player }}</option>
+                                    {% endfor %}
+                                </select>
+                            </form>
+                        </div>
+                        <div class="container-fluid col">
+                            <form>
+                                <label for="rebounder{{ loop.index - 1 }}" style="margin-right: 5px;">Rebounds:</label>
+                                <select class="dropoptions" id="rebounder{{ loop.index - 1 }}" name="player">
+                                    <option disabled selected hidden>Select Best Rebounder</option>
+                                    {% for player in playersList["game{}".format(loop.index - 1)] %}
+                                        <option value="{{ player['Player'] }}">{{ player}}</option>
+                                    {% endfor %}    
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="d-flex justify-content-center" style="padding: 32px">
+                <button class="btn" id="submitBtn" onclick='submitPicks("{{ games }}")'>Submit Picks</button>
+            </div>
+            </br>
+            {% endif %}
+            
+        {% endblock %}
+        <!-- Modal -->
+            <div class="modal fade" id="tableModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Your Picks</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" id="target"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End page content -->
+        </div>
+    </body>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>        
+    <script>
+        window.onload = function() {
+            if (localStorage.getItem('theme') == 'dark') {
+                toggleDarkMode();
+                if(document.getElementById('checkbox').checked) {
+                    localStorage.setItem('checkbox', true);
+                }
+            }
+            function toggleDarkMode() {
+                let isDark = document.body.classList.toggle('darkmode');
+                if (isDark) {
+                    toggleDarkMode.checked = true;
+                    localStorage.setItem('theme','dark');
+                    document.getElementById('checkbox').setAttribute('checked', 'checked');
+                } else {
+                    toggleDarkMode.checked = false;
+                    localStorage.removeItem('theme', 'dark');
+                }
+            }
+        }
+        function submitPicks(games) {
+            let new_games = games.replace(/'/g,'"')
+            games = JSON.parse(new_games)
+            let ngames = games["Games"].length;
+            let data = games["Games"];
+            let dictPicks = {};
+            for (let i = 0; i < ngames; i++) {
+                let winner = document.getElementsByClassName(`game${i} selected`)
+                let winnerPick = winner[0].id
+                let scorer = document.getElementById(`scorer${i}`)
+                let ptsPick = scorer.options[scorer.selectedIndex].text
+                let passer = document.getElementById(`passer${i}`)
+                let astPick = passer.options[passer.selectedIndex].text
+                let rebounder = document.getElementById(`rebounder${i}`)
+                let rebPick = rebounder.options[rebounder.selectedIndex].text;
+                let game = data[i]["team1"] + " vs " + data[i]["team2"];
+                dictPicks[game] = {
+                'Game': game,
+                'Winner': [winnerPick],
+                'PTS': [ptsPick],
+                'AST': [astPick],
+                'REB': [rebPick]
+                };
+            }
+            console.log(dictPicks);
+            if (window.confirm("Are you sure you want to submit?") == true ){
+                fetch('/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(dictPicks)
+                })
+                .then(response => {
+                    if (response.ok) {
+                        // Handle a successful response (e.g., show a success message)
+                        console.log("Data submitted successfully.");
+                    } else {
+                        // Handle errors (e.g., show an error message)
+                        console.error("Data submission failed.");
+                    }
+                })
+                .catch(error => {
+                    console.error("An error occurred:", error);
+                });
+                window.location.href = '/submit'
+            } 
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>           
+</html>

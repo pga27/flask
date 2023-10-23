@@ -1,0 +1,484 @@
+{
+    "Date": {
+        "Apr10": [
+            {
+                "Visitor": "MEM",
+                "Home": "CLE"
+            },
+            {
+                "Visitor": "CHO",
+                "Home": "ATL"
+            },
+            {
+                "Visitor": "TOR",
+                "Home": "BRK"
+            },
+            {
+                "Visitor": "DAL",
+                "Home": "MIA"
+            },
+            {
+                "Visitor": "ORL",
+                "Home": "MIL"
+            },
+            {
+                "Visitor": "SAS",
+                "Home": "OKC"
+            },
+            {
+                "Visitor": "MIN",
+                "Home": "DEN"
+            },
+            {
+                "Visitor": "PHO",
+                "Home": "LAC"
+            }
+        ],
+        "Apr11": [
+            {
+                "Visitor": "CHI",
+                "Home": "DET"
+            },
+            {
+                "Visitor": "NYK",
+                "Home": "BOS"
+            },
+            {
+                "Visitor": "HOU",
+                "Home": "UTA"
+            },
+            {
+                "Visitor": "GSW",
+                "Home": "POR"
+            },
+            {
+                "Visitor": "NOP",
+                "Home": "SAC"
+            }
+        ],
+        "Apr1": [
+            {
+                "Visitor": "BOS",
+                "Home": "CHO"
+            },
+            {
+                "Visitor": "MEM",
+                "Home": "DET"
+            },
+            {
+                "Visitor": "BRK",
+                "Home": "IND"
+            },
+            {
+                "Visitor": "POR",
+                "Home": "ORL"
+            },
+            {
+                "Visitor": "ATL",
+                "Home": "CHI"
+            },
+            {
+                "Visitor": "PHO",
+                "Home": "NOP"
+            }
+        ],
+        "Apr4": [
+            {
+                "Visitor": "PHI",
+                "Home": "MIA"
+            },
+            {
+                "Visitor": "SAC",
+                "Home": "NYK"
+            },
+            {
+                "Visitor": "GSW",
+                "Home": "HOU"
+            },
+            {
+                "Visitor": "DEN",
+                "Home": "LAC"
+            }
+        ],
+        "Apr6": [
+            {
+                "Visitor": "CLE",
+                "Home": "LAL"
+            },
+            {
+                "Visitor": "DET",
+                "Home": "BRK"
+            },
+            {
+                "Visitor": "PHI",
+                "Home": "MEM"
+            },
+            {
+                "Visitor": "ATL",
+                "Home": "DEN"
+            }
+        ],
+        "Apr5": [
+            {
+                "Visitor": "ORL",
+                "Home": "CHO"
+            },
+            {
+                "Visitor": "OKC",
+                "Home": "IND"
+            },
+            {
+                "Visitor": "POR",
+                "Home": "WAS"
+            },
+            {
+                "Visitor": "SAC",
+                "Home": "BOS"
+            },
+            {
+                "Visitor": "NYK",
+                "Home": "CHI"
+            },
+            {
+                "Visitor": "MIA",
+                "Home": "HOU"
+            },
+            {
+                "Visitor": "DET",
+                "Home": "MEM"
+            },
+            {
+                "Visitor": "TOR",
+                "Home": "MIL"
+            },
+            {
+                "Visitor": "SAS",
+                "Home": "NOP"
+            },
+            {
+                "Visitor": "ATL",
+                "Home": "DAL"
+            },
+            {
+                "Visitor": "MIN",
+                "Home": "PHO"
+            },
+            {
+                "Visitor": "UTA",
+                "Home": "LAC"
+            }
+        ],
+        "Apr2": [
+            {
+                "Visitor": "OKC",
+                "Home": "PHI"
+            },
+            {
+                "Visitor": "LAL",
+                "Home": "TOR"
+            },
+            {
+                "Visitor": "MIL",
+                "Home": "WAS"
+            },
+            {
+                "Visitor": "GSW",
+                "Home": "DAL"
+            },
+            {
+                "Visitor": "NYK",
+                "Home": "MIA"
+            },
+            {
+                "Visitor": "HOU",
+                "Home": "MIN"
+            },
+            {
+                "Visitor": "SAS",
+                "Home": "DEN"
+            },
+            {
+                "Visitor": "CLE",
+                "Home": "UTA"
+            },
+            {
+                "Visitor": "LAC",
+                "Home": "SAC"
+            }
+        ],
+        "Apr7": [
+            {
+                "Visitor": "HOU",
+                "Home": "DAL"
+            },
+            {
+                "Visitor": "CLE",
+                "Home": "LAC"
+            },
+            {
+                "Visitor": "MIA",
+                "Home": "IND"
+            },
+            {
+                "Visitor": "POR",
+                "Home": "BOS"
+            },
+            {
+                "Visitor": "OKC",
+                "Home": "CHO"
+            },
+            {
+                "Visitor": "CHI",
+                "Home": "ORL"
+            },
+            {
+                "Visitor": "NOP",
+                "Home": "PHO"
+            },
+            {
+                "Visitor": "WAS",
+                "Home": "TOR"
+            },
+            {
+                "Visitor": "NYK",
+                "Home": "MIL"
+            },
+            {
+                "Visitor": "PHI",
+                "Home": "SAS"
+            },
+            {
+                "Visitor": "SAC",
+                "Home": "BRK"
+            },
+            {
+                "Visitor": "UTA",
+                "Home": "GSW"
+            },
+            {
+                "Visitor": "MIN",
+                "Home": "LAL"
+            }
+        ],
+        "Apr12": [
+            {
+                "Visitor": "ORL",
+                "Home": "PHI"
+            },
+            {
+                "Visitor": "CHI",
+                "Home": "WAS"
+            },
+            {
+                "Visitor": "CHO",
+                "Home": "BOS"
+            },
+            {
+                "Visitor": "IND",
+                "Home": "CLE"
+            },
+            {
+                "Visitor": "BRK",
+                "Home": "NYK"
+            },
+            {
+                "Visitor": "LAL",
+                "Home": "MEM"
+            },
+            {
+                "Visitor": "TOR",
+                "Home": "MIA"
+            },
+            {
+                "Visitor": "ATL",
+                "Home": "MIN"
+            },
+            {
+                "Visitor": "MIL",
+                "Home": "OKC"
+            },
+            {
+                "Visitor": "DEN",
+                "Home": "SAS"
+            },
+            {
+                "Visitor": "DET",
+                "Home": "DAL"
+            },
+            {
+                "Visitor": "NOP",
+                "Home": "GSW"
+            },
+            {
+                "Visitor": "HOU",
+                "Home": "POR"
+            },
+            {
+                "Visitor": "UTA",
+                "Home": "LAC"
+            },
+            {
+                "Visitor": "PHO",
+                "Home": "SAC"
+            }
+        ],
+        "Apr14": [
+            {
+                "Visitor": "WAS",
+                "Home": "BOS"
+            },
+            {
+                "Visitor": "CHO",
+                "Home": "CLE"
+            },
+            {
+                "Visitor": "ATL",
+                "Home": "IND"
+            },
+            {
+                "Visitor": "TOR",
+                "Home": "MIA"
+            },
+            {
+                "Visitor": "CHI",
+                "Home": "NYK"
+            },
+            {
+                "Visitor": "MIL",
+                "Home": "ORL"
+            },
+            {
+                "Visitor": "BRK",
+                "Home": "PHI"
+            },
+            {
+                "Visitor": "UTA",
+                "Home": "GSW"
+            },
+            {
+                "Visitor": "HOU",
+                "Home": "LAC"
+            },
+            {
+                "Visitor": "DEN",
+                "Home": "MEM"
+            },
+            {
+                "Visitor": "PHO",
+                "Home": "MIN"
+            },
+            {
+                "Visitor": "LAL",
+                "Home": "NOP"
+            },
+            {
+                "Visitor": "DAL",
+                "Home": "OKC"
+            },
+            {
+                "Visitor": "POR",
+                "Home": "SAC"
+            },
+            {
+                "Visitor": "DET",
+                "Home": "SAS"
+            }
+        ],
+        "Apr9": [
+            {
+                "Visitor": "DAL",
+                "Home": "CHO"
+            },
+            {
+                "Visitor": "DET",
+                "Home": "PHI"
+            },
+            {
+                "Visitor": "IND",
+                "Home": "TOR"
+            },
+            {
+                "Visitor": "MIA",
+                "Home": "ATL"
+            },
+            {
+                "Visitor": "BOS",
+                "Home": "MIL"
+            },
+            {
+                "Visitor": "NYK",
+                "Home": "CHI"
+            },
+            {
+                "Visitor": "ORL",
+                "Home": "HOU"
+            },
+            {
+                "Visitor": "SAS",
+                "Home": "MEM"
+            },
+            {
+                "Visitor": "WAS",
+                "Home": "MIN"
+            },
+            {
+                "Visitor": "SAC",
+                "Home": "OKC"
+            },
+            {
+                "Visitor": "DEN",
+                "Home": "UTA"
+            },
+            {
+                "Visitor": "GSW",
+                "Home": "LAL"
+            },
+            {
+                "Visitor": "LAC",
+                "Home": "PHO"
+            },
+            {
+                "Visitor": "NOP",
+                "Home": "POR"
+            }
+        ],
+        "Apr3": [
+            {
+                "Visitor": "POR",
+                "Home": "CHO"
+            },
+            {
+                "Visitor": "LAL",
+                "Home": "WAS"
+            },
+            {
+                "Visitor": "DET",
+                "Home": "ATL"
+            },
+            {
+                "Visitor": "OKC",
+                "Home": "BOS"
+            },
+            {
+                "Visitor": "IND",
+                "Home": "BRK"
+            },
+            {
+                "Visitor": "MEM",
+                "Home": "MIL"
+            },
+            {
+                "Visitor": "TOR",
+                "Home": "MIN"
+            },
+            {
+                "Visitor": "ORL",
+                "Home": "NOP"
+            },
+            {
+                "Visitor": "CLE",
+                "Home": "PHO"
+            }
+        ]
+    }
+}

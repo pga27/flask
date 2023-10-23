@@ -1,0 +1,88 @@
+{
+    "Players": [
+        {
+            "Player": "Luka Garza",
+            "Link": "https://www.basketball-reference.com/players/g/garzalu01.html"
+        },
+        {
+            "Player": "D.J. Carton",
+            "Link": "https://www.basketball-reference.com/players/c/cartodj01.html"
+        },
+        {
+            "Player": "Trevor Keels",
+            "Link": "https://www.basketball-reference.com/players/k/keelstr01.html"
+        },
+        {
+            "Player": "Matt Ryan",
+            "Link": "https://www.basketball-reference.com/players/r/ryanma01.html"
+        },
+        {
+            "Player": "Tyrese Martin",
+            "Link": "https://www.basketball-reference.com/players/m/martity01.html"
+        },
+        {
+            "Player": "Daishen Nix",
+            "Link": "https://www.basketball-reference.com/players/n/nixda01.html"
+        },
+        {
+            "Player": "Nickeil Alexander-Walker",
+            "Link": "https://www.basketball-reference.com/players/a/alexani01.html"
+        },
+        {
+            "Player": "Leonard Miller",
+            "Link": "https://www.basketball-reference.com/players/m/millele01.html"
+        },
+        {
+            "Player": "Shake Milton",
+            "Link": "https://www.basketball-reference.com/players/m/miltosh01.html"
+        },
+        {
+            "Player": "Troy Brown Jr.",
+            "Link": "https://www.basketball-reference.com/players/b/browntr01.html"
+        },
+        {
+            "Player": "Jaylen Clark",
+            "Link": "https://www.basketball-reference.com/players/c/clarkja02.html"
+        },
+        {
+            "Player": "Karl-Anthony Towns",
+            "Link": "https://www.basketball-reference.com/players/t/townska01.html"
+        },
+        {
+            "Player": "Naz Reid",
+            "Link": "https://www.basketball-reference.com/players/r/reidna01.html"
+        },
+        {
+            "Player": "Josh Minott",
+            "Link": "https://www.basketball-reference.com/players/m/minotjo01.html"
+        },
+        {
+            "Player": "Kyle Anderson",
+            "Link": "https://www.basketball-reference.com/players/a/anderky01.html"
+        },
+        {
+            "Player": "Wendell Moore Jr.",
+            "Link": "https://www.basketball-reference.com/players/m/moorewe01.html"
+        },
+        {
+            "Player": "Jordan McLaughlin",
+            "Link": "https://www.basketball-reference.com/players/m/mclaujo01.html"
+        },
+        {
+            "Player": "Mike Conley",
+            "Link": "https://www.basketball-reference.com/players/c/conlemi01.html"
+        },
+        {
+            "Player": "Rudy Gobert",
+            "Link": "https://www.basketball-reference.com/players/g/goberru01.html"
+        },
+        {
+            "Player": "Anthony Edwards",
+            "Link": "https://www.basketball-reference.com/players/e/edwaran01.html"
+        },
+        {
+            "Player": "Jaden McDaniels",
+            "Link": "https://www.basketball-reference.com/players/m/mcdanja02.html"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "Players": [
+        {
+            "Player": "Nicolas Batum",
+            "Link": "https://www.basketball-reference.com/players/b/batumni01.html"
+        },
+        {
+            "Player": "Nate Darling",
+            "Link": "https://www.basketball-reference.com/players/d/darlina01.html"
+        },
+        {
+            "Player": "Joshua Primo",
+            "Link": "https://www.basketball-reference.com/players/p/primojo01.html"
+        },
+        {
+            "Player": "Bryson Williams",
+            "Link": "https://www.basketball-reference.com/players/w/willibr04.html"
+        },
+        {
+            "Player": "Jordan Miller",
+            "Link": "https://www.basketball-reference.com/players/m/millejo02.html"
+        },
+        {
+            "Player": "Moussa Diabat\u00e9",
+            "Link": "https://www.basketball-reference.com/players/d/diabamo01.html"
+        },
+        {
+            "Player": "Mason Plumlee",
+            "Link": "https://www.basketball-reference.com/players/p/plumlma01.html"
+        },
+        {
+            "Player": "Russell Westbrook",
+            "Link": "https://www.basketball-reference.com/players/w/westbru01.html"
+        },
+        {
+            "Player": "Kobe Brown",
+            "Link": "https://www.basketball-reference.com/players/b/brownko01.html"
+        },
+        {
+            "Player": "Amir Coffey",
+            "Link": "https://www.basketball-reference.com/players/c/coffeam01.html"
+        },
+        {
+            "Player": "Marcus Morris",
+            "Link": "https://www.basketball-reference.com/players/m/morrima03.html"
+        },
+        {
+            "Player": "Ivica Zubac",
+            "Link": "https://www.basketball-reference.com/players/z/zubaciv01.html"
+        },
+        {
+            "Player": "Robert Covington",
+            "Link": "https://www.basketball-reference.com/players/c/covinro01.html"
+        },
+        {
+            "Player": "Terance Mann",
+            "Link": "https://www.basketball-reference.com/players/m/mannte01.html"
+        },
+        {
+            "Player": "Kawhi Leonard",
+            "Link": "https://www.basketball-reference.com/players/l/leonaka01.html"
+        },
+        {
+            "Player": "Brandon Boston Jr.",
+            "Link": "https://www.basketball-reference.com/players/b/bostobr01.html"
+        },
+        {
+            "Player": "Bones Hyland",
+            "Link": "https://www.basketball-reference.com/players/h/hylanbo01.html"
+        },
+        {
+            "Player": "Norman Powell",
+            "Link": "https://www.basketball-reference.com/players/p/powelno01.html"
+        },
+        {
+            "Player": "Paul George",
+            "Link": "https://www.basketball-reference.com/players/g/georgpa01.html"
+        },
+        {
+            "Player": "Kenyon Martin Jr.",
+            "Link": "https://www.basketball-reference.com/players/m/martike04.html"
+        }
+    ]
+}

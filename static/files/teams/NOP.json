@@ -1,0 +1,84 @@
+{
+    "Players": [
+        {
+            "Player": "Larry Nance Jr.",
+            "Link": "https://www.basketball-reference.com/players/n/nancela02.html"
+        },
+        {
+            "Player": "Jalen Crutcher",
+            "Link": "https://www.basketball-reference.com/players/c/crutcja01.html"
+        },
+        {
+            "Player": "Malcolm Hill",
+            "Link": "https://www.basketball-reference.com/players/h/hillma01.html"
+        },
+        {
+            "Player": "Trey Jemison",
+            "Link": "https://www.basketball-reference.com/players/j/jemistr01.html"
+        },
+        {
+            "Player": "Tevian Jones",
+            "Link": "https://www.basketball-reference.com/players/j/joneste02.html"
+        },
+        {
+            "Player": "Kaiser Gates",
+            "Link": "https://www.basketball-reference.com/players/g/gateska01.html"
+        },
+        {
+            "Player": "E.J. Liddell",
+            "Link": "https://www.basketball-reference.com/players/l/liddeej01.html"
+        },
+        {
+            "Player": "Herbert Jones",
+            "Link": "https://www.basketball-reference.com/players/j/joneshe01.html"
+        },
+        {
+            "Player": "Cody Zeller",
+            "Link": "https://www.basketball-reference.com/players/z/zelleco01.html"
+        },
+        {
+            "Player": "Jordan Hawkins",
+            "Link": "https://www.basketball-reference.com/players/h/hawkijo01.html"
+        },
+        {
+            "Player": "CJ McCollum",
+            "Link": "https://www.basketball-reference.com/players/m/mccolcj01.html"
+        },
+        {
+            "Player": "Dyson Daniels",
+            "Link": "https://www.basketball-reference.com/players/d/daniedy01.html"
+        },
+        {
+            "Player": "Zion Williamson",
+            "Link": "https://www.basketball-reference.com/players/w/willizi01.html"
+        },
+        {
+            "Player": "Jose Alvarado",
+            "Link": "https://www.basketball-reference.com/players/a/alvarjo01.html"
+        },
+        {
+            "Player": "Jonas Valan\u010di\u016bnas",
+            "Link": "https://www.basketball-reference.com/players/v/valanjo01.html"
+        },
+        {
+            "Player": "Willy Hernang\u00f3mez",
+            "Link": "https://www.basketball-reference.com/players/h/hernawi01.html"
+        },
+        {
+            "Player": "Trey Murphy III",
+            "Link": "https://www.basketball-reference.com/players/m/murphtr02.html"
+        },
+        {
+            "Player": "Naji Marshall",
+            "Link": "https://www.basketball-reference.com/players/m/marshna01.html"
+        },
+        {
+            "Player": "Brandon Ingram",
+            "Link": "https://www.basketball-reference.com/players/i/ingrabr01.html"
+        },
+        {
+            "Player": "Kira Lewis Jr.",
+            "Link": "https://www.basketball-reference.com/players/l/lewiski01.html"
+        }
+    ]
+}

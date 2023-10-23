@@ -1,0 +1,80 @@
+{
+    "Players": [
+        {
+            "Player": "Josh Richardson",
+            "Link": "https://www.basketball-reference.com/players/r/richajo01.html"
+        },
+        {
+            "Player": "R.J. Hampton",
+            "Link": "https://www.basketball-reference.com/players/h/hamptrj01.html"
+        },
+        {
+            "Player": "Cheick Diallo",
+            "Link": "https://www.basketball-reference.com/players/d/diallch01.html"
+        },
+        {
+            "Player": "Justin Champagnie",
+            "Link": "https://www.basketball-reference.com/players/c/champju01.html"
+        },
+        {
+            "Player": "Cole Swider",
+            "Link": "https://www.basketball-reference.com/players/s/swideco01.html"
+        },
+        {
+            "Player": "Jamal Cain",
+            "Link": "https://www.basketball-reference.com/players/c/cainja01.html"
+        },
+        {
+            "Player": "Kevin Love",
+            "Link": "https://www.basketball-reference.com/players/l/loveke01.html"
+        },
+        {
+            "Player": "Jaime Jaquez Jr.",
+            "Link": "https://www.basketball-reference.com/players/j/jaqueja01.html"
+        },
+        {
+            "Player": "Orlando Robinson",
+            "Link": "https://www.basketball-reference.com/players/r/robinor01.html"
+        },
+        {
+            "Player": "Thomas Bryant",
+            "Link": "https://www.basketball-reference.com/players/b/bryanth01.html"
+        },
+        {
+            "Player": "Bam Adebayo",
+            "Link": "https://www.basketball-reference.com/players/a/adebaba01.html"
+        },
+        {
+            "Player": "Dru Smith",
+            "Link": "https://www.basketball-reference.com/players/s/smithdr01.html"
+        },
+        {
+            "Player": "Tyler Herro",
+            "Link": "https://www.basketball-reference.com/players/h/herroty01.html"
+        },
+        {
+            "Player": "Caleb Martin",
+            "Link": "https://www.basketball-reference.com/players/m/martica02.html"
+        },
+        {
+            "Player": "Nikola Jovi\u0107",
+            "Link": "https://www.basketball-reference.com/players/j/jovicni01.html"
+        },
+        {
+            "Player": "Haywood Highsmith",
+            "Link": "https://www.basketball-reference.com/players/h/highsha01.html"
+        },
+        {
+            "Player": "Jimmy Butler",
+            "Link": "https://www.basketball-reference.com/players/b/butleji01.html"
+        },
+        {
+            "Player": "Duncan Robinson",
+            "Link": "https://www.basketball-reference.com/players/r/robindu01.html"
+        },
+        {
+            "Player": "Kyle Lowry",
+            "Link": "https://www.basketball-reference.com/players/l/lowryky01.html"
+        }
+    ]
+}

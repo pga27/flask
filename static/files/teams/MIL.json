@@ -1,0 +1,84 @@
+{
+    "Players": [
+        {
+            "Player": "A.J. Green",
+            "Link": "https://www.basketball-reference.com/players/g/greenaj01.html"
+        },
+        {
+            "Player": "Kihei Clark",
+            "Link": "https://www.basketball-reference.com/players/c/clarkki01.html"
+        },
+        {
+            "Player": "Elijah Hughes",
+            "Link": "https://www.basketball-reference.com/players/h/hugheel01.html"
+        },
+        {
+            "Player": "Glenn Robinson III",
+            "Link": "https://www.basketball-reference.com/players/r/robingl02.html"
+        },
+        {
+            "Player": "Cameron Payne",
+            "Link": "https://www.basketball-reference.com/players/p/payneca01.html"
+        },
+        {
+            "Player": "Marques Bolden",
+            "Link": "https://www.basketball-reference.com/players/b/boldema01.html"
+        },
+        {
+            "Player": "TyTy Washington Jr.",
+            "Link": "https://www.basketball-reference.com/players/w/washity02.html"
+        },
+        {
+            "Player": "Thanasis Antetokounmpo",
+            "Link": "https://www.basketball-reference.com/players/a/antetth01.html"
+        },
+        {
+            "Player": "Jae Crowder",
+            "Link": "https://www.basketball-reference.com/players/c/crowdja01.html"
+        },
+        {
+            "Player": "Chris Livingston",
+            "Link": "https://www.basketball-reference.com/players/l/livinch01.html"
+        },
+        {
+            "Player": "Damian Lillard",
+            "Link": "https://www.basketball-reference.com/players/l/lillada01.html"
+        },
+        {
+            "Player": "Andre Jackson Jr.",
+            "Link": "https://www.basketball-reference.com/players/j/jacksan01.html"
+        },
+        {
+            "Player": "Khris Middleton",
+            "Link": "https://www.basketball-reference.com/players/m/middlkh01.html"
+        },
+        {
+            "Player": "Brook Lopez",
+            "Link": "https://www.basketball-reference.com/players/l/lopezbr01.html"
+        },
+        {
+            "Player": "Malik Beasley",
+            "Link": "https://www.basketball-reference.com/players/b/beaslma01.html"
+        },
+        {
+            "Player": "Robin Lopez",
+            "Link": "https://www.basketball-reference.com/players/l/lopezro01.html"
+        },
+        {
+            "Player": "Pat Connaughton",
+            "Link": "https://www.basketball-reference.com/players/c/connapa01.html"
+        },
+        {
+            "Player": "MarJon Beauchamp",
+            "Link": "https://www.basketball-reference.com/players/b/beaucma01.html"
+        },
+        {
+            "Player": "Bobby Portis",
+            "Link": "https://www.basketball-reference.com/players/p/portibo01.html"
+        },
+        {
+            "Player": "Giannis Antetokounmpo",
+            "Link": "https://www.basketball-reference.com/players/a/antetgi01.html"
+        }
+    ]
+}

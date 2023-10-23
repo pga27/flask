@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NBA Daily Picks</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head> 
+    
+    <body class="body">
+        {% block content %}
+        <div class="main" script="width=100%">
+            <!-- !PAGE CONTENT! -->
+            <!-- Cabeçalho--> 
+            <header id="inicio">
+                <div class="row">
+                    <div class="col justify-content-start">
+                        <div class="form-check form-switch d-flex justify-content-start top-nav">
+                            <input type="checkbox" class="form-check-input" id="checkbox" onclick="toggleDarkMode()">
+                            <label class="form-check-label" for="checkbox"><p class="theme" style="padding-left: 5px;"><i class="fa-solid fa-circle-half-stroke fa-rotate-180"></i></p></label>
+                        </div>
+                    </div>
+                    <div class="top-nav col d-flex justify-content-end">
+                        
+                            {% if userLogged %}
+                                <button onclick="location.href='/logout'" class="btn logged" id="logout"><i class="fa fa-sign-in"></i>Logout</a>
+                                <button onclick="location.href='/profile'" class="btn logged"><i class="fa fa-user"></i>Profile</a>
+                            {% else %}
+                                <button onclick="location.href='/login'" class="btn unlogged"><i class="fa fa-sign-out"></i>Login</a>
+                                <button onclick="location.href='/sign-up'" class="btn unlogged"><i class="fa fa-user-plus"></i>Sign Up</a>
+                            {% endif %}
+                        
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="nav justify-content-center" id="borderless">
+                        <button onclick="location.href='/';" class="btn"><i class="fa fa-info"></i>How to Play</button>
+                        <button onclick="location.href='/picks';" class="btn"><i class="fa fa-gamepad"></i>Pick 'em</button>
+                        <button onclick="location.href='/rankings';" class="btn"><i class="fa fa-ranking-star"></i>Rankings</button>
+                        <button onclick="location.href='/results';" class="btn"><i class="fa fa-bars"></i>Results</button>
+                        <button onclick="location.href='/schedule';"class="btn"><i class="fa fa-calendar"></i>Schedule</button>
+                        <button onclick="location.href='/standings';"class="btn"><i class="fa fa-square-poll-vertical"></i>Standings</button>
+                    </div>
+                </div>            
+            </header>
+            {% for message in get_flashed_messages() %}
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{ message }}  
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>  
+            {% endfor %}
+            <!--Conteúdo-->
+            <div class="center titulo" style="background-color: #b1101d; color:white"><b>{{ teamDict["Name"] }}</b></div>
+            <div class="d-flex justify-content-center row">
+                <div class="col">
+                    <div class="d-flex justify-content-center col">
+                        <figure>
+                            <img src="{{ url_for('static', filename='images/teams/{}.png'.format(teamDict['ShortName']))}}" class="img">
+                            <figcaption><h3 class="d-flex justify-content-center">{{ teamDict['ShortName'] }}</h3></figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="d-flex justify-content-center col">
+                        <h4>Record: {{teamDict["Wins"]}} - {{teamDict["Losses"]}} ({{teamDict["WinPCT"]}})</h4>
+                    </div>
+                    <div class="d-flex justify-content-center col">
+                        <div class="row">
+                            <table class="d-flex justify-content-center table table-hover table-bordered ">
+                                <tbody class="tableBorder">
+                                    <tr><th style = 'background-color: #3f51b5;color:white;'>Player</th><th style='background-color: #3f51b5;color:white;'>PPG</th></tr>
+                                    {% for player in ppg %}
+                                    <tr><td><a class="underline" href="{{ ppg[player]['Link'] }}" target="_blank">{{ ppg[player]["Name"] }}</a></td><td>{{ ppg[player]["PPG"] }}</td></tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <table class="d-flex justify-content-center table table-hover table-bordered ">
+                                <tbody class="tableBorder">
+                                    <tr><th style = 'background-color: #3f51b5;color:white;'>Player</th><th style='background-color: #3f51b5;color:white;'>APG</th></tr>
+                                    {% for player in apg %}
+                                    <tr><td><a class="underline" href="{{ apg[player]['Link'] }}" target="_blank">{{ apg[player]["Name"] }}</a></td><td>{{ apg[player]["APG"] }}</td></tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <table class="d-flex justify-content-center table table-hover table-bordered ">
+                                <tbody class="tableBorder">
+                                    <tr><th style = 'background-color: #3f51b5;color:white;'>Player</th><th style='background-color: #3f51b5;color:white;'>RPG</th></tr>
+                                    {% for player in rpg %}
+                                    <tr><td><a class="underline" href="{{ rpg[player]['Link'] }}" target="_blank">{{ rpg[player]["Name"] }}</a></td><td>{{ rpg[player]["RPG"] }}</td></tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <table class="d-flex justify-content-center table table-hover table-bordered">
+                        <tbody class="tableBorder">
+                            <tr><th style = 'background-color: #3f51b5;color:white;'>Player</th><th style='background-color: #3f51b5;color:white;'>PPG</th><th style='background-color: #3f51b5;color:white;'>APG</th><th style='background-color: #3f51b5;color:white;'>RPG</th><th style='background-color: #3f51b5;color:white;'>Games</th></tr>
+                            {% for player in teamDict["Players"] %}
+                            <tr><td><a class="underline" href="{{ teamDict['Players'][player]['Link'] }}" target="_blank">{{ teamDict["Players"][player]["Name"] }}</a></td><td>{{ teamDict["Players"][player]["PPG"] }}</td><td>{{ teamDict["Players"][player]["APG"] }}</td><td>{{ teamDict["Players"][player]["RPG"] }}</td><td>{{ teamDict["Players"][player]["Games"] }}</td></tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+            </div>
+        </div>
+        {% endblock %}
+    </body>        
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script>
+        if (localStorage.getItem('theme') == 'dark') {
+            toggleDarkMode();
+            if(document.getElementById('checkbox').checked) {
+                localStorage.setItem('checkbox', true);
+            }
+        }
+        function toggleDarkMode() {
+            let isDark = document.body.classList.toggle('darkmode');
+            if (isDark) {
+                toggleDarkMode.checked = true;
+                localStorage.setItem('theme','dark');
+                document.getElementById('checkbox').setAttribute('checked', 'checked');
+            } else {
+                toggleDarkMode.checked = false;
+                localStorage.removeItem('theme', 'dark');
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,76 @@
+{
+    "Players": [
+        {
+            "Player": "Austin Reaves",
+            "Link": "https://www.basketball-reference.com/players/r/reaveau01.html"
+        },
+        {
+            "Player": "Quinndary Weatherspoon",
+            "Link": "https://www.basketball-reference.com/players/w/weathqu01.html"
+        },
+        {
+            "Player": "Christian Wood",
+            "Link": "https://www.basketball-reference.com/players/w/woodch01.html"
+        },
+        {
+            "Player": "Alex Fudge",
+            "Link": "https://www.basketball-reference.com/players/f/fudgeal01.html"
+        },
+        {
+            "Player": "Jalen Hood-Schifino",
+            "Link": "https://www.basketball-reference.com/players/h/hoodsja01.html"
+        },
+        {
+            "Player": "Maxwell Lewis",
+            "Link": "https://www.basketball-reference.com/players/l/lewisma05.html"
+        },
+        {
+            "Player": "D'Angelo Russell",
+            "Link": "https://www.basketball-reference.com/players/r/russeda01.html"
+        },
+        {
+            "Player": "Gabe Vincent",
+            "Link": "https://www.basketball-reference.com/players/v/vincega01.html"
+        },
+        {
+            "Player": "Jaxson Hayes",
+            "Link": "https://www.basketball-reference.com/players/h/hayesja02.html"
+        },
+        {
+            "Player": "Anthony Davis",
+            "Link": "https://www.basketball-reference.com/players/d/davisan02.html"
+        },
+        {
+            "Player": "Taurean Prince",
+            "Link": "https://www.basketball-reference.com/players/p/princta02.html"
+        },
+        {
+            "Player": "Rui Hachimura",
+            "Link": "https://www.basketball-reference.com/players/h/hachiru01.html"
+        },
+        {
+            "Player": "Cam Reddish",
+            "Link": "https://www.basketball-reference.com/players/r/reddica01.html"
+        },
+        {
+            "Player": "Colin Castleton",
+            "Link": "https://www.basketball-reference.com/players/c/castlco01.html"
+        },
+        {
+            "Player": "D'Moi Hodge",
+            "Link": "https://www.basketball-reference.com/players/h/hodgedm01.html"
+        },
+        {
+            "Player": "LeBron James",
+            "Link": "https://www.basketball-reference.com/players/j/jamesle01.html"
+        },
+        {
+            "Player": "Max Christie",
+            "Link": "https://www.basketball-reference.com/players/c/chrisma02.html"
+        },
+        {
+            "Player": "Jarred Vanderbilt",
+            "Link": "https://www.basketball-reference.com/players/v/vandeja01.html"
+        }
+    ]
+}

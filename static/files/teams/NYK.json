@@ -1,0 +1,84 @@
+{
+    "Players": [
+        {
+            "Player": "RJ Barrett",
+            "Link": "https://www.basketball-reference.com/players/b/barrerj01.html"
+        },
+        {
+            "Player": "Mamadi Diakite",
+            "Link": "https://www.basketball-reference.com/players/d/diakima01.html"
+        },
+        {
+            "Player": "Brandon Goodwin",
+            "Link": "https://www.basketball-reference.com/players/g/goodwbr01.html"
+        },
+        {
+            "Player": "Ryan Arcidiacono",
+            "Link": "https://www.basketball-reference.com/players/a/arcidry01.html"
+        },
+        {
+            "Player": "Charlie Brown Jr.",
+            "Link": "https://www.basketball-reference.com/players/b/brownch02.html"
+        },
+        {
+            "Player": "Duane Washington Jr.",
+            "Link": "https://www.basketball-reference.com/players/w/washidu02.html"
+        },
+        {
+            "Player": "Dylan Windler",
+            "Link": "https://www.basketball-reference.com/players/w/windldy01.html"
+        },
+        {
+            "Player": "Donte DiVincenzo",
+            "Link": "https://www.basketball-reference.com/players/d/divindo01.html"
+        },
+        {
+            "Player": "Jacob Toppin",
+            "Link": "https://www.basketball-reference.com/players/t/toppija01.html"
+        },
+        {
+            "Player": "DaQuan Jeffries",
+            "Link": "https://www.basketball-reference.com/players/j/jeffrda01.html"
+        },
+        {
+            "Player": "Immanuel Quickley",
+            "Link": "https://www.basketball-reference.com/players/q/quickim01.html"
+        },
+        {
+            "Player": "Isaiah Hartenstein",
+            "Link": "https://www.basketball-reference.com/players/h/harteis01.html"
+        },
+        {
+            "Player": "Jalen Brunson",
+            "Link": "https://www.basketball-reference.com/players/b/brunsja01.html"
+        },
+        {
+            "Player": "Mitchell Robinson",
+            "Link": "https://www.basketball-reference.com/players/r/robinmi01.html"
+        },
+        {
+            "Player": "Jericho Sims",
+            "Link": "https://www.basketball-reference.com/players/s/simsje01.html"
+        },
+        {
+            "Player": "Julius Randle",
+            "Link": "https://www.basketball-reference.com/players/r/randlju01.html"
+        },
+        {
+            "Player": "Josh Hart",
+            "Link": "https://www.basketball-reference.com/players/h/hartjo01.html"
+        },
+        {
+            "Player": "Evan Fournier",
+            "Link": "https://www.basketball-reference.com/players/f/fournev01.html"
+        },
+        {
+            "Player": "Quentin Grimes",
+            "Link": "https://www.basketball-reference.com/players/g/grimequ01.html"
+        },
+        {
+            "Player": "Miles McBride",
+            "Link": "https://www.basketball-reference.com/players/m/mcbrimi01.html"
+        }
+    ]
+}
